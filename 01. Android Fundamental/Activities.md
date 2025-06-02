@@ -28,10 +28,10 @@
 
 ![Type of Intent](../photos/IntentType.png)
 
-#### 1. Explicit Intent 
+## 1. Explicit Intent 
   - Destination Target Component (a particular `activity` or `service`) are already specify
 
-#### Example Code
+### Example Code
 
 - Start a New Activity 
 
@@ -58,13 +58,13 @@ myIntent.putExtra("username","admin")//(key,value)
 this.startActivity(myIntent)
 
 ```
-#### 2. Implicit Intents
+## 2. Implicit Intents
 
 - `implicit intents` do not directly specify the Android components (destination app or component) which should be called. They declare a `general action to perform`, which allows a component from another app to handle it. 
 
 - For example, an implicit intent can request to take a picture, allowing any app with the appropriate capability to perform the action
 
-#### Example code
+### Example code
 - For example, to send an email, you can use an implicit intent and let the user choose their preferred email client:
 
 ```java
@@ -104,7 +104,7 @@ intent.putExtra(Intent.EXTRA_TEXT, “This is an email sent from an Android app.
 - Describes the data type and schema that the component can handle
 - or example, an activity may specify that it can handle `image/*` data type to open and display images.
 
-#### Example code
+### Example code
 
 ```java
 <activity android:name=".ExampleActivity"> 
